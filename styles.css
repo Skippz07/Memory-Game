@@ -14,6 +14,7 @@ html, body {
 .container {
     text-align: center;
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
     flex: 1;
     display: flex;
@@ -23,9 +24,17 @@ html, body {
 }
 
 .homepage, .game {
-    color: #000000;
     width: 100%;
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
     text-align: center;
+    margin-bottom: 200px;
+    margin-top: 200px;
+
 }
 
 h1 {
@@ -305,8 +314,6 @@ h1 {
     }
 }
 
-
-
 @media (max-width: 768px) {
     h1 {
         font-size: 10vw;
@@ -332,6 +339,18 @@ h1 {
         padding: 10px;
         font-size: 5vw;
     }
+
+    .board {
+        display: grid;
+        gap: 10px;
+        justify-content: center;
+        width: 200%;
+        max-width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        flex: 1;
+    }
 }
 
 @media (max-width: 480px) {
@@ -354,4 +373,19 @@ h1 {
         padding: 8px;
         font-size: 6vw;
     }
+    
+    .homepage, .game {
+        width: 100%;
+        height: 100%; /* Full height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 400px;
+    
+    }
+
+
 }
