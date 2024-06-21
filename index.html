@@ -8,6 +8,8 @@
     <link rel = "stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 
 
 </head>
@@ -15,7 +17,7 @@
     <div class="container">    
         <div class="homepage">
             <h1>Memory Matching</h1>
-            <div class = "best-score" id="BestScore">Best Time: N/A  </div>
+            <div class = "best-score" id="bestScore">Best Time: N/A  </div>
             <div class="image-search" id ="imageSearchContainer">
                 <label for="imageSearch"> Search Images:</label>
                 <input type = "text" id="imageSearch" placeholder =" Search here">
@@ -26,7 +28,16 @@
                 <button class="difficulty-button" data-size="8">HARD </button>
             </div>
         </div>
+        <div class="game" style="display:none;">
+            <div class="info">
+                <div class="timer" id="timer">Time: 0s</div>
+                <div class="flipped-counter" id="flippedCounter">Flipped: 0</div>
+            </div>
+            <div class="board" id="board"></div>
+            <button class="play-again-button" id="playAgainButton" style="display:none;">Play Again</button>
+            <div class="message" id="message"></div>
+        </div>
     </div>
-    ><script src ="script.js"></script>
+    <script src ="script.js"></script>
 </body>
 </html>
