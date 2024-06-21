@@ -6,6 +6,7 @@
     <title>Memory Game </title>
     <link rel = "icon" type="image/x-icon" href="favicon.ico">
     <link rel = "stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -29,6 +30,7 @@
             </div>
         </div>
         <div class="game" style="display:none;">
+            <button class="back-to-homepage-button" id="backToHomepageButton">Back to Homepage</button>
             <div class="info">
                 <div class="timer" id="timer">Time: 0s</div>
                 <div class="flipped-counter" id="flippedCounter">Flipped: 0</div>
@@ -37,7 +39,10 @@
             <button class="play-again-button" id="playAgainButton" style="display:none;">Play Again</button>
             <div class="message" id="message"></div>
         </div>
+        
     </div>
     <script src ="script.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="install.js"></script>
 </body>
 </html>

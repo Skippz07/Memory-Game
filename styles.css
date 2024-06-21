@@ -102,6 +102,28 @@ h1 {
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
 }
 /*game portion of the webpage */
+
+
+.back-to-homepage-button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back-to-homepage-button:hover {
+    background-color: #ff4500;
+}
+
+
 .play-again-button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -139,8 +161,8 @@ h1 {
     display: grid;
     gap: 10px;
     justify-content: center;
-    width: 100%;
-    max-width: 90%;
+    width: 50%;
+    max-width: 40%;
     margin: 0 auto;
     padding: 10px;
     flex: 1;
@@ -161,7 +183,7 @@ h1 {
 .card {
     width: 100%;
     padding-top: 100%; /* Maintain a square aspect ratio */
-    background-color: #333;
+    background-color: #333333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,9 +222,12 @@ h1 {
 }
 
 .card .card-front {
-    background-color: #333;
+    background-image: url('icon-192x192.png');
+    background-size: cover; /* Ensure the image covers the entire card front */
+    background-position: center; /* Center the image */
     transform: rotateY(0deg);
 }
+
 
 .card .card-back {
     background-color: #fff;

@@ -1,6 +1,7 @@
 const homepage = document.querySelector('.homepage');
 const gamePage = document.querySelector('.game');
 const playAgainButton = document.getElementById('playAgainButton');
+const backToHomepageButton = document.getElementById('backToHomepageButton');
 const board = document.getElementById('board');
 const message = document.getElementById('message');
 const timer = document.getElementById('timer');
@@ -28,6 +29,7 @@ difficultyButtons.forEach(button => button.addEventListener('click', (e) => {
 }));
 
 playAgainButton.addEventListener('click', resetGame);
+backToHomepageButton.addEventListener('click', goToHomepage);
 
 function startGame() {
     homepage.style.display = 'none';
@@ -52,6 +54,12 @@ function resetGame() {
     time = 0;
     flipCount = 0;
     startGame();
+}
+
+function goToHomepage() {
+    gamePage.style.display = 'none';
+    homepage.style.display = 'block';
+    stopTimer();
 }
 
 function generateCards() {

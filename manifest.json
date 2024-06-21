@@ -1,0 +1,22 @@
+{
+    "name": "Memory Matching Game",
+    "short_name": "MemoryGame",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ff7e5f",
+    "theme_color": "#ff7e5f",
+    "description": "A fun and engaging memory matching game.",
+    "icons": [
+      {
+        "src": "icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
